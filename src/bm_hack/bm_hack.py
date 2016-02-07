@@ -6,7 +6,7 @@
 #
 #
 # Code modifyed and shrinked down to the only needed parts
-# by Bloody_Wulf in December 2015
+# by bloodywulf in December 2015
 #
 #
 # THIS CODE IS DECLARED BY THE AUTHOR TO BE IN THE PUBLIC DOMAIN.

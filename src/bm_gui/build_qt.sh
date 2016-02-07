@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
 #
-#   This file is part of BodyMedia/bm_gui
-#   BodyMedia/src/bm_gui/build_qt.sh
+#   This file is part of FreeTheBodyM/bm_gui
+#   FreeTheBodyM/src/bm_gui/build_qt.sh
 #
 #
 #   This script is only to convert the ui-code to python-code

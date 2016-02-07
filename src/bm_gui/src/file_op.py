@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 #
-#   This file is part of BodyMedia/bm_gui
-#   BodyMedia/src/bm_gui/src/file_op.py
+#   This file is part of FreeTheBodyM/bm_gui
+#   FreeTheBodyM/src/bm_gui/src/file_op.py
 #
 #
 #   This module is for parsing the csv file and write the swd file

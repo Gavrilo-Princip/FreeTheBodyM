@@ -1,6 +1,6 @@
 #
-#   This file is part of BodyMedia/bm_gui
-#   BodyMedia/src/bm_gui/src/gui/__init__.py
+#   This file is part of FreeTheBodyM/bm_gui
+#   FreeTheBodyM/src/bm_gui/src/gui/__init__.py
 #
 #
 #   This module indicates the module status

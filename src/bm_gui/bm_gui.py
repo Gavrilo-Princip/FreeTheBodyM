@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 #
-#   This file is part of BodyMedia/bm_gui
-#   BodyMedia/src/bm_gui/bm_gui.py
+#   This file is part of FreeTheBodyM/bm_gui
+#   FreeTheBodyM/src/bm_gui/bm_gui.py
 #
 #
 #   Load the mainapplication

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 #
-#   This file is part of BodyMedia/bm_gui
-#   BodyMedia/src/bm_gui/setup.py
+#   This file is part of FreeTheBodyM/bm_gui
+#   FreeTheBodyM/src/bm_gui/setup.py
 #
 #
 #   This is the setup module and build the windows binary

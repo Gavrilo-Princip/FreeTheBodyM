@@ -1,6 +1,6 @@
 #
-#   This file is part of BodyMedia/bm_gui
-#   BodyMedia/src/bm_gui/src/gui/mainwindow.py
+#   This file is part of FreeTheBodyM/bm_gui
+#   FreeTheBodyM/src/bm_gui/src/gui/mainwindow.py
 #
 #
 #   This module contains the functions for the gui
