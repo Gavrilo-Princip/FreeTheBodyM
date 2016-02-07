@@ -12,3 +12,7 @@ Dieser Teil ist der Teil von Centi Benzo, und dafür zuständig die Daten von de
 ###Teil 2: bm_gui
 Dieser Teil ist von mir, bloodywulf, und ist dazu da, dem Benutzer eine grafische Oberfläche zur Bedienung zur Verfügung zu stellen. Ebenfalls konvertiert dieser Codeteil die CSV-Datei in das swd-Format, welches die SenseWear-Software einlesen kann.
 bm_gui steht unter der GPL und ist somit ebenfalls freie Software! Dieser Codeteil ist Python 3.4 und PyQt 5.4 Code!
+
+
+#Updates (stand: 07.02.2016)
+In den nächsten 2 bis 3 Tagen wird es ein Update geben, mit dem es möglich sein wird, die Körperdaten auf dem Armband zu speichern!
