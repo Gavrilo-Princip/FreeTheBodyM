@@ -1,4 +1,4 @@
-#BodyMedia
+#FreeTheBodyM
 Der ürsprüngliche Code, zum Auslesen des BodyMedia-Armbandes, stammt von Centi Benzo aus dem Jahre 2009!
 Centi Benzo hat seinen Code als PUBLIC DOMAIN veröffentlich!
 PUBLIC DOMAIN, siehe: https://en.wikipedia.org/wiki/Public_domain_software
