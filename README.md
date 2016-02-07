@@ -1,23 +1,14 @@
-# BodyMedia
-Original Code from Centi Benzo to read the Data from the BodyMedia without the online Service.
-
-Read the Wiki for more Informations!
-https://github.com/bloodywulf/BodyMedia/wiki/BodyMedia
-
-If you do not read the Wiki, stop flaming about anything that do not work as you expect it!
-
-RTFM!
+#BodyMedia
+Der ürsprüngliche Code, zum Auslesen des BodyMedia-Armbandes, stammt von Centi Benzo aus dem Jahre 2009!
+Centi Benzo hat seinen Code als PUBLIC DOMAIN veröffentlich!
+PUBLIC DOMAIN, siehe: https://en.wikipedia.org/wiki/Public_domain_software
 
 
+Dieses Projekt besteht aus 2 Teilen:
 
-This Project contains 2 Parts:
+###Teil 1: bm_hack
+Dieser Teil ist der Teil von Centi Benzo, und dafür zuständig die Daten von dem Armband auszulesen und als CSV-Datei zu speichern. Dieser Code ist Python 2.7 Code!
 
-bm_hack
-=======
-bm_hack is the Part of Centi Benzo and is available under PUBLIC DOMAIN!
-
-
-bm_gui
-======
-bm_gui is written by me, Bloody_Wulf, and is available under the GPL License!
-
+###Teil 2: bm_gui
+Dieser Teil ist von mir, bloodywulf, und ist dazu da, dem Benutzer eine grafische Oberfläche zur Bedienung zur Verfügung zu stellen. Ebenfalls konvertiert dieser Codeteil die CSV-Datei in das swd-Format, welches die SenseWear-Software einlesen kann.
+bm_gui steht unter der GPL und ist somit ebenfalls freie Software! Dieser Codeteil ist Python 3.4 und PyQt 5.4 Code!
