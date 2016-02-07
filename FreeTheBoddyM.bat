@@ -1,6 +1,6 @@
 ::
-::   This file is part of BodyMedia
-::   BodyMedia/bin/Windows/bm_gui.bat
+::   This file is part of FreeTheBodyM
+::   FreeTheBodyM/bin/Windows/bm_gui.bat
 ::
 ::
 ::   This file is only to start the application
@@ -24,4 +24,4 @@
 ::   or look here: http://www.gnu.org/licenses/gpl.html
 ::
 
-.\bm_gui\bm_gui.exe
+.\bin\Windows\bm_gui\bm_gui.exe

@@ -51,7 +51,7 @@ class MainWindow(QMainWindow):
         file_exist = False
         try:
             #   first i wanted to name the conf-file like EvilShit.exe/Trojan.exe/Backdoor.exe
-            #   and add the the real config as ADS. But i think stupid windows users will
+            #   and add the the real config as ADS. But i think windows users will
             #   not laughing like me about this easter-egg :-/
             self.conf_file = open('./conf.cfg', mode='r', encoding='utf-8')
             file_exist = True
@@ -207,13 +207,13 @@ class MainWindow(QMainWindow):
         date = datetime.datetime.fromtimestamp(ts).strftime('%H_%M_%S')
 
         if self.__lang == 'german':
-            p = '.\\Output\\Ausgelesen_am_%s_um_%s.csv' % (year, date)
-            x = '.\\Output\\Ausgelesen_am_%s_um_%s.xml' % (year, date)
-            s = '.\\Output\\Ausgelesen_am_%s_um_%s.swd' % (year, date)
+            p = '.\\data\\Ausgelesen_am_%s_um_%s.csv' % (year, date)
+            x = '.\\data\\Ausgelesen_am_%s_um_%s.xml' % (year, date)
+            s = '.\\data\\Ausgelesen_am_%s_um_%s.swd' % (year, date)
         else:
-            p = '.\\Output\\Read_at_%s_at_%s.csv' % (year, date)
-            x = '.\\Output\\Read_at_%s_at_%s.xml' % (year, date)
-            s = '.\\Output\\Read_at_%s_at_%s.swd' % (year, date)
+            p = '.\\data\\Read_at_%s_at_%s.csv' % (year, date)
+            x = '.\\data\\Read_at_%s_at_%s.xml' % (year, date)
+            s = '.\\data\\Read_at_%s_at_%s.swd' % (year, date)
 
         c = '%s --fromSerial=%s --toCsv=%s' % (self.BmHackPath, self.Port[0], p)
 
@@ -320,7 +320,7 @@ class MainWindow(QMainWindow):
             self.ui.btnStart.setEnabled(True)
             self.ui.cbClear.setEnabled(True)
             self.ui.btnClearOnly.setEnabled(True)
-            self.BmHackPath = '.\\bm_hack\\bm_hack.exe'
+            self.BmHackPath = '.\\bin\\Windows\\bm_hack\\bm_hack.exe'
 
     #
     #
@@ -332,7 +332,6 @@ class MainWindow(QMainWindow):
                 return port
         else:
             return False
-
 
     #
     #
@@ -484,16 +483,3 @@ class MainWindow(QMainWindow):
                 self.ui.cbSmoker.setCurrentText('ja')
 
         self.Seek()
-
-    #
-    #
-    #
-    def WriteToBodyMedia(self, port, bodydata):
-        s = serial.Serial(port, baudrate=921600)
-        for data in bodydata:
-            s.write(data)
-            ret = ''
-            while ret != b'\xba':
-                ret = s.read()
-        else:
-            s.close()
