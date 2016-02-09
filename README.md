@@ -14,5 +14,9 @@ Dieser Teil ist von mir, bloodywulf, und ist dazu da, dem Benutzer eine grafisch
 bm_gui steht unter der GPL und ist somit ebenfalls freie Software! Dieser Codeteil ist Python 3.4 und PyQt 5.4 Code!
 
 
-#Updates (stand: 07.02.2016)
+#Update (stand: 09.02.2016)
+Das Update, um die Körperdaten auf das Armband zu schreiben, wird sich wohl noch etwas verzögern. Es ist vielleicht nicht jedem klar, aber dass hier ist ein Freizeit-Projekt! Wie der Name sagt mache ich das in meiner FREIZEIT! Und aus eben diesem Grund haben andere Dinge, wie die Familie, einfach Vorrang für mich!
+
+
+###Update (stand: 07.02.2016)
 In den nächsten 2 bis 3 Tagen wird es ein Update geben, mit dem es möglich sein wird, die Körperdaten auf dem Armband zu speichern!
