@@ -303,7 +303,7 @@ class FileOp:
 </SDK2><History>
   <Retrieve version="8.1.0.22" />
   <Item version="2.0" />
-</History>''' % (hand, year, month, day, date, epoch, ts, eetarget, math.ceil((weight * 2.2046) + 0.5), math.ceil((height / 2.54) + 0.5), steptarget, t, sex, smoker, t)
+</History>''' % (hand, year, month, day, date, epoch, ts, eetarget, int(round((weight * 2.2046) + 0.5, 0)), int(round((height / 2.54) + 0.5, 0)), steptarget, t, sex, smoker, t)
         self.Xml.write(head)
 
     #
