@@ -26,6 +26,7 @@
 #   or look here: http://www.gnu.org/licenses/gpl.html
 #
 
+import math
 import time
 import datetime
 import os
@@ -212,7 +213,7 @@ class FileOp:
     #
     #
     #
-    def CreateHeader(self, hand, weight, height, sex, age, smoker, eetarget, steptarget, day, month, year):
+    def CreateHeader(self, hand, weight, height, sex, smoker, eetarget, steptarget, day, month, year):
         if int(day) < 10:
             day = '0%s' % (day)
 
@@ -302,7 +303,7 @@ class FileOp:
 </SDK2><History>
   <Retrieve version="8.1.0.22" />
   <Item version="2.0" />
-</History>''' % (hand, year, month, day, date, epoch, ts, eetarget, int((weight * 2.2046) + 0.5), int((height / 2.54) + 0.5), steptarget, t, sex, smoker, t)
+</History>''' % (hand, year, month, day, date, epoch, ts, eetarget, math.ceil((weight * 2.2046) + 0.5), math.ceil((height / 2.54) + 0.5), steptarget, t, sex, smoker, t)
         self.Xml.write(head)
 
     #
