@@ -77,20 +77,14 @@ class MainWindow(QMainWindow):
         self.ui.cbSmoker.addItem('nein')
         self.ui.cbSmoker.addItem('ja')
 
-        #   Age
-        for i in range(18, 101, 1):
-            self.ui.cbAge.addItem(str(i))
-        else:
-            self.ui.cbAge.setMaxVisibleItems(20)
-
         #   Weight
-        for i in range(20, 301, 1):
+        for i in range(40, 251, 1):
             self.ui.cbWeight.addItem(str(i))
         else:
             self.ui.cbWeight.setMaxVisibleItems(20)
 
         #   Height
-        for i in range(70, 251, 1):
+        for i in range(100, 221, 1):
             self.ui.cbHeight.addItem(str(i))
         else:
             self.ui.cbHeight.setMaxVisibleItems(20)
@@ -120,7 +114,7 @@ class MainWindow(QMainWindow):
             self.ui.cbBDayMonth.setMaxVisibleItems(12)
 
         #   birthday year
-        for i in range(1940, 2015, 1):
+        for i in range(1940, 1999, 1):
             self.ui.cbBDayYear.addItem(str(i))
         else:
             self.ui.cbBDayYear.setMaxVisibleItems(20)
@@ -168,9 +162,6 @@ class MainWindow(QMainWindow):
                             self.ui.cbSmoker.setCurrentText('no')
                         else:
                             self.ui.cbSmoker.setCurrentText('yes')
-
-                elif line[0] == 'age':
-                    self.ui.cbAge.setCurrentText(line[1])
 
                 elif line[0] == 'weight':
                     self.ui.cbWeight.setCurrentText(line[1])
@@ -237,7 +228,6 @@ class MainWindow(QMainWindow):
         else:
             smoker = 'true'
 
-        age     = self.ui.cbAge.currentText()
         w       = int(self.ui.cbWeight.currentText())
         h       = int(self.ui.cbHeight.currentText())
         ee      = self.ui.cbEeTarget.currentText()
@@ -247,7 +237,7 @@ class MainWindow(QMainWindow):
         year    = self.ui.cbBDayYear.currentText()
 
         try:
-            self.Foo = src.file_op.FileOp(p, x, s, [hand, w, h, sex, age, smoker, ee, steps, day, month, year])
+            self.Foo = src.file_op.FileOp(p, x, s, [hand, w, h, sex, smoker, ee, steps, day, month, year])
             self.Foo.Run()
         except:
             if self.__lang == 'german':
@@ -289,7 +279,6 @@ class MainWindow(QMainWindow):
         else:
             self.conf_file.write('smoker=true\n')
 
-        self.conf_file.write('age=%s\n' %       (self.ui.cbAge.currentText()))
         self.conf_file.write('weight=%s\n' %    (self.ui.cbWeight.currentText()))
         self.conf_file.write('height=%s\n' %    (self.ui.cbHeight.currentText()))
         self.conf_file.write('cals=%s\n' %      (self.ui.cbEeTarget.currentText()))
@@ -342,7 +331,7 @@ class MainWindow(QMainWindow):
 
             #   group boxes
             self.ui.gbBodyData.setTitle('Bodydata')
-            self.ui.gbBDay.setTitle('Birthday and Age')
+            self.ui.gbBDay.setTitle('Birthday')
             self.ui.gbHeightWeight.setTitle('Height and Weight')
             self.ui.gbTargets.setTitle('Targets')
             self.ui.gbOthers.setTitle('Others')
@@ -352,7 +341,6 @@ class MainWindow(QMainWindow):
             self.ui.lbDay.setText('Day')
             self.ui.lbMonth.setText('Month')
             self.ui.lbYear.setText('Year')
-            self.ui.lbAge.setText('Age:')
             self.ui.lbHeight.setText('Height in cm:')
             self.ui.lbWeight.setText('Weight in kg:')
             self.ui.lbKCal.setText('Calories:')
@@ -415,7 +403,7 @@ class MainWindow(QMainWindow):
 
             #   group boxes
             self.ui.gbBodyData.setTitle('Koerperdaten')
-            self.ui.gbBDay.setTitle('Geburtstag und Alter')
+            self.ui.gbBDay.setTitle('Geburtstag')
             self.ui.gbHeightWeight.setTitle('Groesse und Gewicht')
             self.ui.gbTargets.setTitle('Ziele')
             self.ui.gbOthers.setTitle('Sonstiges')
@@ -425,7 +413,6 @@ class MainWindow(QMainWindow):
             self.ui.lbDay.setText('Tag')
             self.ui.lbMonth.setText('Monat')
             self.ui.lbYear.setText('Jahr')
-            self.ui.lbAge.setText('Alter:')
             self.ui.lbHeight.setText('Groesse in cm:')
             self.ui.lbWeight.setText('Gewicht in kg:')
             self.ui.lbKCal.setText('Kalorien:')

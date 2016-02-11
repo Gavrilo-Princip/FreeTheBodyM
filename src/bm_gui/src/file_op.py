@@ -130,7 +130,7 @@ class FileOp:
 
         self.Timestamp()
         self.CreateHeader(self.header_values[0], self.header_values[1], self.header_values[2], self.header_values[3], self.header_values[4], self.header_values[5],
-                          self.header_values[6], self.header_values[7], self.header_values[8], self.header_values[9], self.header_values[10])
+                          self.header_values[6], self.header_values[7], self.header_values[8], self.header_values[9])
 
         self.CreateTagList('raw_ee', self.CreateLists(self.__raw_ee_list))
         self.CreateTagList('movavg_skin_temp', self.CreateLists(self.__movavg_skin_temp_list))
@@ -283,7 +283,6 @@ class FileOp:
   <Parameter Name="Volume" Value="142" />
   <Parameter Name="vigthreshold" Value="6.0" />
   <Parameter Name="Sex" Value="%s" />
-  <Parameter Name="Age" Value="%s" />
   <Parameter Name="display1224" Value="255" />
   <Parameter Name="Serial Number" Value="123456789" />
   <Parameter Name="Smoker" Value="%s" />
@@ -303,7 +302,7 @@ class FileOp:
 </SDK2><History>
   <Retrieve version="8.1.0.22" />
   <Item version="2.0" />
-</History>''' % (hand, year, month, day, date, epoch, ts, eetarget, int((weight * 2.2046) + 0.5), int((height / 2.54) + 0.5), steptarget, t, sex, age, smoker, t)
+</History>''' % (hand, year, month, day, date, epoch, ts, eetarget, int((weight * 2.2046) + 0.5), int((height / 2.54) + 0.5), steptarget, t, sex, smoker, t)
         self.Xml.write(head)
 
     #

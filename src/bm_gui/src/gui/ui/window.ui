@@ -268,7 +268,7 @@ lokal speichern</string>
       </rect>
      </property>
      <property name="title">
-      <string>Geburtstag und Alter</string>
+      <string>Geburtstag</string>
      </property>
      <widget class="QLabel" name="lbBirthday">
       <property name="geometry">
@@ -286,7 +286,7 @@ lokal speichern</string>
      <widget class="QLabel" name="lbDay">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>110</x>
         <y>30</y>
         <width>31</width>
         <height>21</height>
@@ -299,7 +299,7 @@ lokal speichern</string>
      <widget class="QLabel" name="lbMonth">
       <property name="geometry">
        <rect>
-        <x>170</x>
+        <x>200</x>
         <y>30</y>
         <width>52</width>
         <height>21</height>
@@ -312,7 +312,7 @@ lokal speichern</string>
      <widget class="QLabel" name="lbYear">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>290</x>
         <y>30</y>
         <width>52</width>
         <height>20</height>
@@ -325,7 +325,7 @@ lokal speichern</string>
      <widget class="QComboBox" name="cbBDayDay">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>110</x>
         <y>50</y>
         <width>51</width>
         <height>22</height>
@@ -335,7 +335,7 @@ lokal speichern</string>
      <widget class="QComboBox" name="cbBDayMonth">
       <property name="geometry">
        <rect>
-        <x>170</x>
+        <x>200</x>
         <y>50</y>
         <width>51</width>
         <height>22</height>
@@ -345,32 +345,9 @@ lokal speichern</string>
      <widget class="QComboBox" name="cbBDayYear">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>290</x>
         <y>50</y>
         <width>71</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="lbAge">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>50</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Alter:</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="cbAge">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>50</y>
-        <width>91</width>
         <height>22</height>
        </rect>
       </property>
