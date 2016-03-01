@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>780</width>
-    <height>610</height>
+    <width>1000</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,15 +18,20 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>780</width>
-    <height>610</height>
+    <width>1000</width>
+    <height>650</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>780</width>
-    <height>610</height>
+    <width>1000</width>
+    <height>650</height>
    </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>FreeTheBodyM</string>
@@ -35,8 +40,8 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>370</y>
+      <x>240</x>
+      <y>410</y>
       <width>751</width>
       <height>151</height>
      </rect>
@@ -158,18 +163,17 @@ Erneut Suchen</string>
       </font>
      </property>
      <property name="text">
-      <string>BodyMedia loeschen,
-OHNE auslesen!</string>
+      <string>BodyMedia aktivieren</string>
      </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="gbBodyData">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>240</x>
       <y>20</y>
       <width>751</width>
-      <height>321</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="font">
@@ -180,20 +184,6 @@ OHNE auslesen!</string>
     <property name="title">
      <string>Koerperdaten</string>
     </property>
-    <widget class="QPushButton" name="btnSafeBody">
-     <property name="geometry">
-      <rect>
-       <x>530</x>
-       <y>260</y>
-       <width>201</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Koerperdaten
-lokal speichern</string>
-     </property>
-    </widget>
     <widget class="QGroupBox" name="gbTargets">
      <property name="geometry">
       <rect>
@@ -286,7 +276,7 @@ lokal speichern</string>
      <widget class="QLabel" name="lbDay">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>100</x>
         <y>30</y>
         <width>31</width>
         <height>21</height>
@@ -299,7 +289,7 @@ lokal speichern</string>
      <widget class="QLabel" name="lbMonth">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>170</x>
         <y>30</y>
         <width>52</width>
         <height>21</height>
@@ -312,7 +302,7 @@ lokal speichern</string>
      <widget class="QLabel" name="lbYear">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>240</x>
         <y>30</y>
         <width>52</width>
         <height>20</height>
@@ -325,7 +315,7 @@ lokal speichern</string>
      <widget class="QComboBox" name="cbBDayDay">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>100</x>
         <y>50</y>
         <width>51</width>
         <height>22</height>
@@ -335,7 +325,7 @@ lokal speichern</string>
      <widget class="QComboBox" name="cbBDayMonth">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>170</x>
         <y>50</y>
         <width>51</width>
         <height>22</height>
@@ -345,7 +335,7 @@ lokal speichern</string>
      <widget class="QComboBox" name="cbBDayYear">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>240</x>
         <y>50</y>
         <width>71</width>
         <height>22</height>
@@ -418,7 +408,7 @@ lokal speichern</string>
        <x>530</x>
        <y>40</y>
        <width>201</width>
-       <height>201</height>
+       <height>261</height>
       </rect>
      </property>
      <property name="title">
@@ -494,12 +484,25 @@ lokal speichern</string>
       </property>
      </widget>
     </widget>
+    <widget class="QPushButton" name="btnBodyData">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>501</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Aktuell eingestellte Koerperdaten auf das BodyMedia uebertragen</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="btnClose">
     <property name="geometry">
      <rect>
-      <x>339</x>
-      <y>540</y>
+      <x>569</x>
+      <y>580</y>
       <width>421</width>
       <height>50</height>
      </rect>
@@ -516,8 +519,8 @@ lokal speichern</string>
    <widget class="QPushButton" name="btnSwitch">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>540</y>
+      <x>240</x>
+      <y>580</y>
       <width>311</width>
       <height>51</height>
      </rect>
@@ -532,6 +535,37 @@ lokal speichern</string>
 Switch language german / english</string>
     </property>
    </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>221</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Hinweise</string>
+    </property>
+    <widget class="QTextEdit" name="teHints">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>25</y>
+       <width>211</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <resources/>
@@ -544,7 +578,7 @@ Switch language german / english</string>
    <hints>
     <hint type="sourcelabel">
      <x>610</x>
-     <y>710</y>
+     <y>489</y>
     </hint>
     <hint type="destinationlabel">
      <x>6</x>
@@ -560,7 +594,7 @@ Switch language german / english</string>
    <hints>
     <hint type="sourcelabel">
      <x>510</x>
-     <y>710</y>
+     <y>550</y>
     </hint>
     <hint type="destinationlabel">
      <x>438</x>
@@ -576,27 +610,11 @@ Switch language german / english</string>
    <hints>
     <hint type="sourcelabel">
      <x>673</x>
-     <y>770</y>
+     <y>549</y>
     </hint>
     <hint type="destinationlabel">
      <x>762</x>
      <y>147</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>btnSafeBody</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>SafeBody()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>591</x>
-     <y>624</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>722</x>
-     <y>12</y>
     </hint>
    </hints>
   </connection>
@@ -624,11 +642,27 @@ Switch language german / english</string>
    <hints>
     <hint type="sourcelabel">
      <x>71</x>
-     <y>565</y>
+     <y>605</y>
     </hint>
     <hint type="destinationlabel">
      <x>36</x>
      <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnBodyData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PushToBM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>242</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>404</y>
     </hint>
    </hints>
   </connection>
@@ -640,5 +674,6 @@ Switch language german / english</string>
   <slot>ClearOnly()</slot>
   <slot>SafeBody()</slot>
   <slot>SwitchLanguage()</slot>
+  <slot>PushToBM()</slot>
  </slots>
 </ui>

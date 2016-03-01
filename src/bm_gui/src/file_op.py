@@ -26,7 +26,6 @@
 #   or look here: http://www.gnu.org/licenses/gpl.html
 #
 
-import math
 import time
 import datetime
 import os
@@ -288,7 +287,7 @@ class FileOp:
   <Parameter Name="Serial Number" Value="123456789" />
   <Parameter Name="Smoker" Value="%s" />
   <Parameter Name="DeviceTime" Value="%s" />
-  <Timezone Value="Europe/Berlin" />
+  <Timezone Value="" />
   <Researcher name="" organization="" department="" />
   <METS Value="3.0" />
   <Notes notes="This File was created from bm_gui written by bloody_wulf!" />
