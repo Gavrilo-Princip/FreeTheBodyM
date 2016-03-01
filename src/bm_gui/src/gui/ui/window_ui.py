@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
 
+#!/usr/bin/env python
+
+#
+# January 2016 by Bloody_Wulf	bloody_wulf@mailbox.org
+#
+# THIS CODE IS DECLARED BY THE AUTHOR TO BE IN THE PUBLIC DOMAIN.
+# NO WARRANTY OF ANY KIND IS PROVIDED.
+#
+
+
 # Form implementation generated from reading ui file './src/gui/ui/window.ui'
 #
 # Created by: PyQt5 UI code generator 5.5.1
